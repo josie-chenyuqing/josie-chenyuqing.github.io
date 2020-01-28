@@ -64,6 +64,206 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Python" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/28/Python/" class="article-date">
+  <time datetime="2020-01-28T10:22:43.000Z" itemprop="datePublished">2020-01-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/28/Python/">Python</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>My study of Python</p>
+<p><strong>[Introduction].some basic  knowledge</strong></p>
+<ul>
+<li><p>What is python?</p>
+<blockquote>
+<ol>
+<li><p>a large heavy-bodied nonvenomous snake occurring throughout the Old World tropics, killing prey by constriction and asphyxiation.</p>
+</li>
+<li><p>(computing)</p>
+<p>a high-level general-purpose programming language.</p>
+</li>
+</ol>
+</blockquote>
+</li>
+<li><p>What python can do?</p>
+</li>
+</ul>
+<p><img src="https://cn.bing.com/th?id=OIP.F5dB5UDSZXUKIUmgcqWpdAHaEK&pid=3.1&w=300&h=300&p=0" alt="img"></p>
+<blockquote>
+<ol>
+<li>Python can be used on a <em>server to create</em> web applications.</li>
+<li>Python can be used alongside software to create work flows.</li>
+<li>Python an connect to database systems. It can also read and modify files.</li>
+<li>Python can be used to handle big data and perform complex mathematics.</li>
+<li>Python can be used for rapid prototyping or for production-ready software development.</li>
+</ol>
+</blockquote>
+<p><strong>Some questions and their solutions</strong></p>
+<p>Part. 1</p>
+<p> <strong>Calculate monthly payments for a loan</strong></p>
+<p>Write a function that calculates and returns the monthly payments for a loan. This function accepts three parameters in the exact order (principal, annual_interest_rate, duration):</p>
+<ul>
+<li><p>principal: The total amount of loan. Assume that the principal is a positive floating point number.</p>
+</li>
+<li><p>annual_interest_rate: This is the percent interest rate per year. Assume that annual_interest_rate is a floating point number. (Notice that 4.5 means that the interest rate is 4.5 percent per year.)</p>
+</li>
+<li><p>duration: number of years to pay the loan back. Assume that duration is a positive integer.</p>
+</li>
+</ul>
+<p>To calculate the amount of monthly payment for the loan you should use the following equation</p>
+<p><img src="file:///C:%5CUsers%5Cjosie%5CAppData%5CLocal%5CTemp%5Cksohtml20048%5Cwps1.jpg" alt="img"> </p>
+<p>Where:</p>
+<ul>
+<li>r is the monthly interest rate (should be calculated by first dividing the annual_interest_rate by 100 and then divide the result by 12 to make it monthly). Notice that if the interest rate is equal to zero then the above equation will give you a Zero Division Error. In that case you should use the following equation:</li>
+</ul>
+<p><img src="file:///C:%5CUsers%5Cjosie%5CAppData%5CLocal%5CTemp%5Cksohtml20048%5Cwps2.jpg" alt="img"> </p>
+<ul>
+<li>n is the total number of monthly payments for the entire duration of the loan (Notice that n is equal to loan duration in years multiplied by 12).</li>
+</ul>
+<p>Your function should return the monthly payment as a floating point number.</p>
+<p>Example: if your function is called with the following parameters:</p>
+<p><code>(1000.0,4.5,5)</code></p>
+<p>Then it should return a floating point number:</p>
+<p><code>18.643019241516996</code></p>
+<p>Remember that you are not asked to print anything. So, your function should just <strong><em>\</em>return**</strong> the monthly payments. You do not need to call your function, it will automatically be called and tested for correctness with the test cases we provide. You only need to write one function and we will test your program with the first function that appears in your code. So, if you want to write more than one function to help you solve the problem remember to embed the helper functions inside the first function.</p>
+<p><strong>solution</strong>: </p>
+<p>principal = float(input(‘please input principal:’))</p>
+<p>annual_interest_rate = float(input(‘please input annual interest rate:’))</p>
+<p>duration = int(input(‘please input the duration:’))</p>
+<p>r = annual_interest_rate/12</p>
+<p>n = duration *12</p>
+<p>if r == 0:</p>
+<p>  monthly_payment=principal/n</p>
+<p>else:</p>
+<p>  monthly_payment = principal <em>r</em>(1+r)<strong>n/((1+r)</strong>n-1)</p>
+<p>print (monthly_payment)</p>
+<p>other interesting things:</p>
+<p>spam=0</p>
+<p>if spam &lt; 5:</p>
+<p>  print (‘Hello world.’)</p>
+<p>spam= spam+ 1</p>
+<p>result：hello world</p>
+<p>spam=0</p>
+<p>while spam&lt;5:</p>
+<p>  print  (‘Hello world.’)</p>
+<p>spam= spam+ 1</p>
+<p>result：hello world</p>
+<p>   hello world</p>
+<p>   hello world</p>
+<p>   hello world</p>
+<p>   hello world</p>
+<p>n=0</p>
+<p>while n &lt; 7:</p>
+<p>  print (‘&amp;’* n)</p>
+<p>  n=n+1</p>
+<p>n=7</p>
+<p>while n &gt; 0:</p>
+<p>  print (‘<em>‘</em> n)</p>
+<p>n=n-1</p>
+<p> result：</p>
+<p>&amp;</p>
+<p>&amp;&amp;</p>
+<p>&amp;&amp;&amp;</p>
+<p>&amp;&amp;&amp;&amp;</p>
+<p>&amp;&amp;&amp;&amp;&amp;</p>
+<p>&amp;&amp;&amp;&amp;&amp;&amp;</p>
+<p>&amp;&amp;&amp;&amp;&amp;</p>
+<p>&amp;&amp;&amp;&amp;</p>
+<p>&amp;&amp;&amp;</p>
+<p>&amp;&amp;</p>
+<p>&amp;</p>
+<p>name=’’</p>
+<p>while name !=’your name’:</p>
+<p>  print(‘Please type your name.’)</p>
+<p>  name =input()</p>
+<p>print(‘Thank you!’)</p>
+<p>result:</p>
+<p>Please type your name.</p>
+<p> Josie</p>
+<p> Please type your name. </p>
+<p>Josie。</p>
+<p>Please type your name.</p>
+<p> your name </p>
+<p>Thank you</p>
+<p>name=’’</p>
+<p>len (name)</p>
+<p>result ：0</p>
+<p>count from 1 to 1000</p>
+<p>total=0</p>
+<p>n=0</p>
+<p>while True:</p>
+<p>  n=n+1</p>
+<p>  total=n+total</p>
+<p>  if n==1000:</p>
+<p>​    break</p>
+<p>print (total)</p>
+<p>result ：500500</p>
+<p>n=0</p>
+<p>while True:</p>
+<p>  print(‘Who are you?’)</p>
+<p>  name=input()</p>
+<p>  if name != ‘Joe’:</p>
+<p>​    continue</p>
+<p>  print(‘Hello,Joe. What is the password?(It is a fish.)’)</p>
+<p>  password=input()</p>
+<p>  if password==’swordfish’:</p>
+<p>​    break</p>
+<p>  else:</p>
+<p>​    n=n+1</p>
+<p>​    if n&gt;=3:</p>
+<p>​       break</p>
+<p>print(‘Access granted.’)</p>
+<p>result: You can only type the wrong password three times and it will go back to where you typed Joe</p>
+<p>better method：</p>
+<p>n=0</p>
+<p>while True:</p>
+<p>  print(‘Who are you?’)</p>
+<p>  name=input()</p>
+<p>  if name != ‘Joe’:</p>
+<p>​    continue</p>
+<p>  print(‘Hello,Joe.’)</p>
+<p>  break</p>
+<p>while True:</p>
+<p>  print(‘What is the password?(It is a fish.)’)</p>
+<p>  password=input()</p>
+<p>  if password==’swordfish’:</p>
+<p>​    break</p>
+<p>  else:</p>
+<p>​    n=n+1</p>
+<p>​    if n&gt;=3:</p>
+<p>​       break</p>
+<p>print(‘Access granted.’）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/01/28/Python/" data-id="ck5xvb6nn0000dgvp06ad6wvf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/The-Study-of-Python/" rel="tag">The Study of Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Happy-New-Year" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/01/25/Happy-New-Year/" class="article-date">
@@ -490,7 +690,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese-New-Year/" rel="tag">Chinese New Year</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Welcome-to-my-lofter/" rel="tag">Welcome to my lofter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/a-book-review/" rel="tag">a book review</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/" rel="tag">book</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese-New-Year/" rel="tag">Chinese New Year</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/The-Study-of-Python/" rel="tag">The Study of Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Welcome-to-my-lofter/" rel="tag">Welcome to my lofter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/a-book-review/" rel="tag">a book review</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/" rel="tag">book</a></li></ul>
     </div>
   </div>
 
@@ -500,7 +700,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Chinese-New-Year/" style="font-size: 10px;">Chinese New Year</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Welcome-to-my-lofter/" style="font-size: 10px;">Welcome to my lofter</a> <a href="/tags/a-book-review/" style="font-size: 10px;">a book review</a> <a href="/tags/book/" style="font-size: 10px;">book</a>
+      <a href="/tags/Chinese-New-Year/" style="font-size: 10px;">Chinese New Year</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/The-Study-of-Python/" style="font-size: 10px;">The Study of Python</a> <a href="/tags/Welcome-to-my-lofter/" style="font-size: 10px;">Welcome to my lofter</a> <a href="/tags/a-book-review/" style="font-size: 10px;">a book review</a> <a href="/tags/book/" style="font-size: 10px;">book</a>
     </div>
   </div>
 
@@ -522,6 +722,10 @@
       <ul>
         
           <li>
+            <a href="/2020/01/28/Python/">Python</a>
+          </li>
+        
+          <li>
             <a href="/2020/01/25/Happy-New-Year/">Happy New Year!</a>
           </li>
         
@@ -535,10 +739,6 @@
         
           <li>
             <a href="/2020/01/23/Empire-of-Cotton-a-Global-History/">Empire of Cotton: a Global History</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/23/Syntax-for-Markdown/">Syntax for Markdown</a>
           </li>
         
       </ul>
