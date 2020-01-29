@@ -90,6 +90,7 @@
 <p><strong>[Introduction].some basic  knowledge</strong></p>
 <ul>
 <li><p>What is python?</p>
+<p>from the website : <a href="https://cn.bing.com/search?q=what+is+python&qs=SS&pq=what+is+python&sc=8-14&cvid=7D258830036B4025A01BF53C60C28A6F&FORM=BESBTB&sp=1&ensearch=1&ajf=60" target="_blank" rel="noopener">bing</a></p>
 <blockquote>
 <ol>
 <li><p>a large heavy-bodied nonvenomous snake occurring throughout the Old World tropics, killing prey by constriction and asphyxiation.</p>
@@ -100,7 +101,10 @@
 </ol>
 </blockquote>
 </li>
+</ul>
+<ul>
 <li><p>What python can do?</p>
+<p>from the website : <a href="https://cn.bing.com/search?q=what%20python%20can%20do&qs=n&form=QBRE&sp=-1&pq=what%20python%20can%20&sc=8-16&sk=&cvid=4B45721B0C8F430ABDB8C964C1B57C69" target="_blank" rel="noopener">bing</a></p>
 </li>
 </ul>
 <p><img src="https://cn.bing.com/th?id=OIP.F5dB5UDSZXUKIUmgcqWpdAHaEK&pid=3.1&w=300&h=300&p=0" alt="img"></p>
@@ -142,39 +146,40 @@
 <p><code>18.643019241516996</code></p>
 <p>Remember that you are not asked to print anything. So, your function should just <strong><em>\</em>return**</strong> the monthly payments. You do not need to call your function, it will automatically be called and tested for correctness with the test cases we provide. You only need to write one function and we will test your program with the first function that appears in your code. So, if you want to write more than one function to help you solve the problem remember to embed the helper functions inside the first function.</p>
 <p><strong>solution</strong>: </p>
-<p>principal = float(input(‘please input principal:’))</p>
-<p>annual_interest_rate = float(input(‘please input annual interest rate:’))</p>
-<p>duration = int(input(‘please input the duration:’))</p>
-<p>r = annual_interest_rate/12</p>
-<p>n = duration *12</p>
-<p>if r == 0:</p>
-<p>  monthly_payment=principal/n</p>
-<p>else:</p>
-<p>  monthly_payment = principal <em>r</em>(1+r)<strong>n/((1+r)</strong>n-1)</p>
-<p>print (monthly_payment)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#96;&#96;&#96;annual_interest_rate &#x3D; float(input(&#39;please input annual interest rate:&#39;))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#96;r &#x3D; annual_interest_rate&#x2F;12&#96;</span><br><span class="line"></span><br><span class="line">&#96;n &#x3D; duration *12&#96;</span><br><span class="line"></span><br><span class="line">&#96;if r &#x3D;&#x3D; 0:&#96;</span><br><span class="line"></span><br><span class="line"> &#96; monthly_payment&#x3D;principal&#x2F;n&#96;</span><br><span class="line"></span><br><span class="line">&#96;else:&#96;</span><br><span class="line"></span><br><span class="line"> &#96; monthly_payment &#x3D; principal r*(1+r)**n&#x2F;((1+r)**n-1)&#96;</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;print (monthly_payment)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
 <p>other interesting things:</p>
-<p>spam=0</p>
-<p>if spam &lt; 5:</p>
-<p>  print (‘Hello world.’)</p>
-<p>spam= spam+ 1</p>
-<p>result：hello world</p>
-<p>spam=0</p>
-<p>while spam&lt;5:</p>
-<p>  print  (‘Hello world.’)</p>
-<p>spam= spam+ 1</p>
-<p>result：hello world</p>
-<p>   hello world</p>
-<p>   hello world</p>
-<p>   hello world</p>
-<p>   hello world</p>
-<p>n=0</p>
-<p>while n &lt; 7:</p>
-<p>  print (‘&amp;’* n)</p>
-<p>  n=n+1</p>
-<p>n=7</p>
-<p>while n &gt; 0:</p>
-<p>  print (‘<em>‘</em> n)</p>
-<p>n=n-1</p>
+<p><code>spam=0</code></p>
+<p><code>if spam &lt; 5:</code></p>
+<p>  <code>print (&#39;Hello world.&#39;)</code></p>
+<p><code>spam= spam+ 1</code></p>
+<p><code>result：hello world</code></p>
+<p><code>spam=0</code></p>
+<p><code>while spam&lt;5:</code></p>
+<p><code>print  (&#39;Hello world.&#39;)</code></p>
+<p><code>spam= spam+ 1</code></p>
+<p>result：</p>
+<p> hello world</p>
+<p>  hello world</p>
+<p> hello world</p>
+<p> hello world</p>
+<p> hello world</p>
+<p><code>n=0</code></p>
+<p><code>while n &lt; 7:</code></p>
+<p><code>print (&#39;&amp;&#39;* n)</code></p>
+<p>  <code>n=n+1</code></p>
+<p><code>n=7</code></p>
+<p><code>while n &gt; 0:</code></p>
+<p> <code>print (&#39;*&#39;* n)</code></p>
+<p><code>n=n-1</code></p>
 <p> result：</p>
 <p>&amp;</p>
 <p>&amp;&amp;</p>
@@ -187,11 +192,11 @@
 <p>&amp;&amp;&amp;</p>
 <p>&amp;&amp;</p>
 <p>&amp;</p>
-<p>name=’’</p>
-<p>while name !=’your name’:</p>
-<p>  print(‘Please type your name.’)</p>
-<p>  name =input()</p>
-<p>print(‘Thank you!’)</p>
+<p><code>name=&#39;&#39;</code></p>
+<p><code>while name !=&#39;your name&#39;:</code></p>
+<p> <code>print(&#39;Please type your name.&#39;)</code></p>
+<p><code>name =input()</code></p>
+<p><code>print(&#39;Thank you!&#39;)</code></p>
 <p>result:</p>
 <p>Please type your name.</p>
 <p> Josie</p>
@@ -200,54 +205,64 @@
 <p>Please type your name.</p>
 <p> your name </p>
 <p>Thank you</p>
-<p>name=’’</p>
-<p>len (name)</p>
+<p><code>name=&#39;&#39;</code></p>
+<p><code>len (name)</code></p>
 <p>result ：0</p>
-<p>count from 1 to 1000</p>
-<p>total=0</p>
-<p>n=0</p>
-<p>while True:</p>
-<p>  n=n+1</p>
-<p>  total=n+total</p>
-<p>  if n==1000:</p>
-<p>​    break</p>
-<p>print (total)</p>
+<p>Q: count from 1 to 1000</p>
+<p><code>total=0</code></p>
+<p><code>n=0</code></p>
+<p><code>while True:</code></p>
+<p><code>n=n+1</code></p>
+<p> <code>total=n+total</code></p>
+<p><code>if n==1000:</code></p>
+<p>​    <code>break</code></p>
+<p><code>print (total)</code></p>
 <p>result ：500500</p>
-<p>n=0</p>
-<p>while True:</p>
-<p>  print(‘Who are you?’)</p>
-<p>  name=input()</p>
-<p>  if name != ‘Joe’:</p>
-<p>​    continue</p>
-<p>  print(‘Hello,Joe. What is the password?(It is a fish.)’)</p>
-<p>  password=input()</p>
-<p>  if password==’swordfish’:</p>
-<p>​    break</p>
-<p>  else:</p>
-<p>​    n=n+1</p>
-<p>​    if n&gt;=3:</p>
-<p>​       break</p>
-<p>print(‘Access granted.’)</p>
-<p>result: You can only type the wrong password three times and it will go back to where you typed Joe</p>
+<p><code>n=0</code></p>
+<p><code>while True:</code></p>
+<p> <code>print(&#39;Who are you?&#39;)</code></p>
+<p>  <code>name=input()</code></p>
+<p> <code>if name != &#39;Joe&#39;:</code></p>
+<p>  <code>continue</code></p>
+<p>  <code>print(&#39;Hello,Joe. What is the password?(It is a fish.)&#39;)</code></p>
+<p>  <code>password=input()</code></p>
+<p>  <code>if password==&#39;swordfish&#39;:</code></p>
+<p>​    <code>break</code></p>
+<p> <code>else:</code></p>
+<p>   <code>n=n+1</code></p>
+<p>  <code>if n&gt;=3:</code></p>
+<p>​      <code>break</code></p>
+<p><code>print(&#39;Access granted.&#39;)</code></p>
+<p>result: </p>
+<p>You can only type the wrong password three times and it will go back to where you typed Joe</p>
 <p>better method：</p>
-<p>n=0</p>
-<p>while True:</p>
-<p>  print(‘Who are you?’)</p>
-<p>  name=input()</p>
-<p>  if name != ‘Joe’:</p>
-<p>​    continue</p>
-<p>  print(‘Hello,Joe.’)</p>
-<p>  break</p>
-<p>while True:</p>
-<p>  print(‘What is the password?(It is a fish.)’)</p>
-<p>  password=input()</p>
-<p>  if password==’swordfish’:</p>
-<p>​    break</p>
-<p>  else:</p>
-<p>​    n=n+1</p>
-<p>​    if n&gt;=3:</p>
-<p>​       break</p>
-<p>print(‘Access granted.’）</p>
+<p><code>n=0</code></p>
+<p><code>while True:</code></p>
+<p>  <code>print(&#39;Who are you?&#39;)</code></p>
+<p>  <code>name=input()</code></p>
+<p>  <code>if name != &#39;Joe&#39;:</code></p>
+<p>   <code>continue</code></p>
+<p>  <code>print(&#39;Hello,Joe.&#39;)</code></p>
+<p><code>break</code></p>
+<p><code>while True:</code></p>
+<p><code>print(&#39;What is the password?(It is a fish.)&#39;)</code></p>
+<p> <code>password=input()</code></p>
+<p>  <code>if password==&#39;swordfish&#39;:</code></p>
+<p>​    <code>break</code></p>
+<p>  <code>else:</code></p>
+<p><code>n=n+1</code></p>
+<p><code>if n&gt;=3:</code></p>
+<p>​      <code>break</code></p>
+<p><code>print(&#39;Access granted.&#39;）</code></p>
+<p><strong>[Conclusion]</strong></p>
+<p>To sum up,l would like to talk about my feeling. Sometimes computer science is a heavy burden for me as  I was terrible at coding (like VB) , and I didn’t know much about it. However the study of grammar made me feel a little more confident because each step is closely related,  I can derive the final formula step by step.</p>
+<p>If we meet problems,we can:</p>
+<ol>
+<li>Take each step individually and identify the problem</li>
+<li>See what the final output is and compare it to the correct result</li>
+<li>Another way to think about it. For example, if you can’t do it with the ‘break’ statement, try the ‘continue’ statement</li>
+<li>Never lose heart!!!</li>
+</ol>
 
       
     </div>
